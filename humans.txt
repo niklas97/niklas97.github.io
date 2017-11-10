@@ -1,0 +1,15 @@
+/* TEAM */
+
+Name: Niklas Eriksson.   
+
+Role: Software developer.
+
+Location: Stockholm, Sweden.
+
+/* SITE */
+                            
+Last update: 2017/11/10 
+                       
+Standards: HTML5, CSS3, javascript.
+
+Software: Cloud9 and jekyll.

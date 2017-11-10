@@ -1,0 +1,5 @@
+#   robot.txt for thig blogg
+#   This blog allows all user-agents complete access
+
+User-agent: *
+Disallow:
