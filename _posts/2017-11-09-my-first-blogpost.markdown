@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Mitt första blogginlägg!"
-categories: jekyll update
 comments: true
 author: Niklas Eriksson
 ---
