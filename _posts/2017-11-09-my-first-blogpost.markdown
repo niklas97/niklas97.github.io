@@ -4,7 +4,7 @@ title: "Mitt första blogginlägg!"
 comments: true
 author: Niklas Eriksson
 excerpt: "testingtesting"
-image: http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg
+image: https://creativecommons.org/wp-content/uploads/2015/03/PDMCC01.png
 ---
 
 # Bilden är tagen på www.creativecommons.org
