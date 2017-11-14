@@ -13,4 +13,6 @@ image: https://creativecommons.org/wp-content/uploads/2015/03/PDMCC01.png
 |:--:| 
 | *CC0* |
 
-Hej! Vad kul att börja blogga. Jag har nu äntligen börjat med ett inslag angående massor av intressanta saker jag håller på och lär mig.
+Hej! Nu börjar bloggen att forma sig, snart kommer ett inlägg om lite "tech-stuff"!
+
+// niklas

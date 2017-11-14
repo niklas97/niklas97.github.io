@@ -1,0 +1,108 @@
+---
+layout: post
+title: "Svar på frågor angående webbdesign."
+comments: true
+author: Niklas Eriksson
+excerpt: "Här skriver jag om vad jag tycker om att bl.a. förkompilera CSS och 
+tillämpa statiska webbplatsgeneratorer"
+image: https://static.pexels.com/photos/54379/pexels-photo-54379.jpeg
+---
+
+# Vad tycker du om att förkompilera din CSS?
+
+#### Jämför med vanlig CSS
+#### Vilka tekniker använde du?
+#### För-och nackdelar?
+
+En preprocessor för CSS medför ett kompileringsteg som leder till att CSS-radnumret
+är irrelevanta för felsökning som gör felsökningen ännu svårare. Detta ger vanlig CSS en fördel. 
+
+Med en preprocessor känns det som om man tappar en hel del viktigt kontroll och 
+att därför en hel del extra kompetens bör finnas hos implementeraren för att en 
+CSS preprocessor verkligen ska kunna utnyttjas, så och andra sidan är troligen CSS 
+preprocessorer lämpliga i längden om man sätter sig in i det ordentligt och att vissa 
+ytterligare konventioner och standarder för CSS preprocessorer sätts. Detta ger CSS preprocessor en möjlig fördel över vanlig CSS.
+
+Om man en gång börjat med en CSS preprocessor i ett specifikt projekt känns det 
+som en väldigt svår uppgift att gå över till normal CSS efteråt vilket är något 
+man bör tänka på ifall man vill ha den valmöjligheten.
+
+CSS preprocessorer medför variabler, "mixins" och "nesting" som löser massor av 
+krångliga och tidskrävande problem som är vanliga i CSS. Detta ger CSS preprocessorer
+en viss fördel, dock så är dessa tre färdigheter något man kan efterlikna i vanlig CSS,så jag är ännu inte helt såld. 
+
+# Vad tycker du om statiska webbplatsgeneratorer?
+#### Vilken typ av projekt är de lämpliga för?
+
+Jag gillar verkligen statiska webbplatsgeneratorer, i alla fall jekyll som jag provat 
+på och tänker därför skriva utifrån Jekyll. Jekyll är väldigt lätt att installera och 
+kräver inga massiva eller krångliga installationer och webbplatser gjorda i Jekyll är väldigt
+snabba och bidrar med bra säkerhet då dem inte innehåller något dynamisk innehåll.
+Det är dock en hel del som man bör sätta sig in i utöver trivial HTML och CSS inför tillämpning av Jekyll
+som gör att "skapandeprocessen" kan ta längre tid för en nybörjare.
+
+Något som är väldigt positiv med statiska webbplatsgeneratorer är möjligheten att 
+kunna tillämpa mer familjära format än HTML för t.ex. blogginlägg då t.ex. Markdown är mer lämpligt. 
+
+Generellt publicerar statiska webbplatsgeneratorer verktyg som är idealiska för användare
+som letar efter ett enkelt sätt att skapa innehåll och göra det redo för webben vilket är väldigt positivt. 
+
+Sammanfattningsvis tror jag att statiska webbplatsgeneratorer är något man kan tillämpa väl i exempelvis
+skapandet av en blogg men jag tror inte att statiska webbplatsgeneratorer är något man
+bör tillämpa för mer massiva webbplatser där storlek, dynamiskt innehåll och komplexitet spelar roll.
+
+# Vad är robots.txt och hur har du konfigurerat den för din webbplats?
+
+Webbplatsägare använder filen robots.txt för att ge instruktioner om sin webbplats
+till webbrobotar med hjälp av ett protokoll som kallas för "The Robots Exclusion Protocol".
+Filen fungerar såhär, att innan en robot besöker själva webbplatsen så besöker den URL/robot.txt 
+och kan där tyda viktig information om vad den bör undvika på webbplatsen. Det är dock 
+inte obligatoriskt för en webbrobot att  besöka och skanna information hos URL/robot.txt
+samt att URL/robot.txt ligger publikt vilket gör att mänskliga användare också kan tillämpa
+den och man bör därför tänka till om vad som skrivs i robot.txt och att man inte tillämpar robot.txt för att dölja information.
+
+På denna webbplats robot.txt finns det inget speciellt specificerat utan lyder
+följande: User-agent: * och Disallow: , vilket ger alla robotar full tillgänglighet.
+
+# Vad är humans.txt och hur har du konfigurerat den för din webbplats?
+
+En humans.txt-fil är ett initiativ för skapare av webbplatser där information om 
+vilka som bidragit till webbplatsen finns tillgängligt samt vilka verktyg och dylikt 
+man tillämpat vid implementering, t.ex. HTML och Jekyll. Den här sidans humans.txt 
+lyder följande: 
+
+/* TEAM */
+
+Name: Niklas Eriksson.   
+Role: Software developer.
+Location: Stockholm, Sweden.
+
+/* SITE */       
+             
+Last update: 2017/11/10                    
+Standards: HTML5, CSS3, javascript.
+Software: Cloud9 and jekyll.
+
+# Hur implementerade du kommentarer till blogginläggen?
+
+För kunna kommentera mina blogginlägg har jag applicerat [disqus](https://disqus.com/)
+och lagt tillhörande kod under _includes/disqus_comments.html som jag sedan inkluderat i default.html för att
+göra allt på webbplatsen tillgängligt att kommentera. Skulle jag vilja undvika kommentarer i ett
+blogginlägg kan jag istället för att skriva comments: true i min markdown-fil skriva: comments: false.
+
+# Vad är "Open Graph" och hur använder du den?
+
+Facebook introducerade “Open Graph” år 2010. Det främjar integration mellan Facebook
+och andra webbplatser genom att låta dem bli rika “graf objekt” med samma funktionalitet som andra Facebook-objekt.
+
+Enkelt sagt, en viss kontroll är möjlig över hur informationen reser från en tredje parts webbplats
+till Facebook vid en delning eller en “gilla” av en sida med hjälp av “Open Graph”. 
+För att göra detta möjligt skickas information via metadata i <head> -delen av webbplatsens kod.
+
+
+
+
+
+
+
+

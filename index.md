@@ -4,4 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 comments: true
+image: https://static.pexels.com/photos/459688/pexels-photo-459688.jpeg
 ---
